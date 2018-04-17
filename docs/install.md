@@ -42,36 +42,18 @@ conda install pytorch torchvision -c pytorch
 Alternatively, you can build directly from source as outlined here: [Installing Pytorch](https://github.com/pytorch/pytorch#from-source). Sometimes the latest PyTorch changes are not included in the version conda installs which can lead to errors. In this case building PyTorch from source should mitigate the issue.
 
 
-### FBThrift
+### Thrift
 
-[FBThrift](https://github.com/facebookresearch/fbthrift) is Facebook's RPC framework.  Note that
-we require *FBThrift*, not Apache Thrift.  Here are instructions for getting on OS/X
+Most distributions contain Apache Thrift.  Because we are running python3, we need at least thrift 0.10.  For OS/X:
 
 ```
-# Install deps with homebrew
-brew install openssl zstd folly
+brew install thrift
+```
 
-# Wangle isn't in homebrew and needs to be installed manually
-git clone https://github.com/facebook/wangle.git
-cd wangle/wangle
-cmake . -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl
-make -j8
-make install
-cd ../..
+Then we need the python bindings for thrift, which we can get from anaconda:
 
-# Install FBThrift
-git clone https://github.com/facebook/fbthrift
-cd fbthrift
-mkdir build
-cd build
-cmake ../ -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl
-make -j8
-make install
-
-# Install python bindings for FBThrift (There may be some compile errors, they can
-#   be ignored)
-cd ../thrift/lib/py
-python setup.py install
+```
+conda install thrift
 ```
 
 ### OpenAI Gym

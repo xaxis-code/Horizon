@@ -32,4 +32,4 @@ Many problems in infrastructure involve stateful, dynamical systems.  For exampl
 
 ## RL + You
 
-While historically, RL has been primarily used in the context of robotics and game-playing, it can be employed in a variety of problem spaces. At Facebook, we're working on using RL at scale: suggesting people you may know, notifying you about fiend & page updates, optimizing our streaming video bitrate, and more.  If you use BlueWhale for your project or have any questions on how to use BlueWhale, [let us know](contact.html)!
+While historically, RL has been primarily used in the context of robotics and game-playing, it can be employed in a variety of problem spaces. At Facebook, we're working on using RL at scale: suggesting people you may know, notifying you about friend & page updates, optimizing our streaming video bitrate, and more.  If you use BlueWhale for your project or have any questions on how to use BlueWhale, [let us know](contact.html)!

@@ -13,7 +13,7 @@ conda config --add channels pytorch # For PyTorch
 
 Clone and enter Horizon repo:
 ```
-git clone https://github.com/facebookresearch/Horizon.git
+git clone https://github.com/xaxis-code/Horizon.git
 cd Horizon/
 ```
 

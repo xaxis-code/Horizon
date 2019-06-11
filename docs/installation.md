@@ -75,7 +75,7 @@ The CUDA build will need [nvidia-docker](https://github.com/NVIDIA/nvidia-docker
 
 To build, clone repository and cd into the respective directory:
 ```
-git clone https://github.com/facebookresearch/Horizon.git
+git clone https://github.com/xaxis-code/Horizon.git
 cd Horizon/
 ```
 
